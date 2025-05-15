@@ -1,6 +1,10 @@
 package net.cham.dragonballredux;
 
 import com.mojang.logging.LogUtils;
+import net.cham.dragonballredux.block.ModBlocks;
+import net.cham.dragonballredux.item.ModCreativeModeTabs;
+import net.cham.dragonballredux.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,6 +32,11 @@ public class DragonBallRedux {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -41,7 +50,13 @@ public class DragonBallRedux {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            //event.accept(ModItems.*insert item name*);
+        }
 
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            //event.accept(ModBlocks.*insert block name*);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
