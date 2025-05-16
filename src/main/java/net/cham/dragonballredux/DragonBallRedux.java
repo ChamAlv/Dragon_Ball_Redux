@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.cham.dragonballredux.block.ModBlocks;
 import net.cham.dragonballredux.item.ModCreativeModeTabs;
 import net.cham.dragonballredux.item.ModItems;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -70,6 +71,8 @@ public class DragonBallRedux {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
         }
+
     }
 }

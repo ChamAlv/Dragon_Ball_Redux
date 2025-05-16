@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 600,
+  "experience": 1,
+  "ingredient": {
+    "item": "dragonballredux:senzu_bean"
+  },
+  "result": {
+    "id": "dragonballredux:senzu_essence"
+  }
+}

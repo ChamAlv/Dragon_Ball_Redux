@@ -16,12 +16,14 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DragonBallRedux.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> DRAGONBALLREDUX_ITEMS_TAB = CREATIVE_MODE_TABS.register("dragonballredux_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SENZU.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SENZU_BEAN.get()))
                     //.withTabsBefore(*insert before tab name*.getId())
                     .title(Component.translatable("creativetab.dragonballredux.dragonballredux_items"))
                     .displayItems((itemDisplayParameters, output) -> {
 
-                        output.accept(ModItems.SENZU.get());
+                        output.accept(ModItems.SENZU_BEAN.get());
+                        output.accept(ModItems.SENZU_SPROUT.get());
+                        output.accept(ModItems.SENZU_ESSENCE.get());
                         output.accept(ModBlocks.DRAGON_BALL.get());
 
                     }).build());

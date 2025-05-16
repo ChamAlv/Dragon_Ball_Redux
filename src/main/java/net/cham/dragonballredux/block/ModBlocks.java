@@ -18,9 +18,24 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, DragonBallRedux.MOD_ID);
 
+
+
+
+
+
     public static final RegistryObject<Block> DRAGON_BALL = registerBlock("dragon_ball",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .explosionResistance(3).instabreak().sound(SoundType.AMETHYST)));
+                    .explosionResistance(3)
+                    .instabreak()
+                    .sound(SoundType.AMETHYST)));
+
+
+
+
+
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

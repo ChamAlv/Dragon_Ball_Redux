@@ -1,7 +1,11 @@
 {
-  "item.dragonballredux.senzu": "Senzu Bean",
+  "item.dragonballredux.senzu_bean": "Senzu Bean",
+  "item.dragonballredux.senzu_sprout": "Senzu Sprout",
+  "item.dragonballredux.senzu_essence": "Senzu Essence",
 
   "block.dragonballredux.dragon_ball": "Dragon Ball",
 
-  "creativetab.dragonballredux.dragnballredux_items": "Dragon Ball Redux Items"
+  "creativetab.dragonballredux.dragonballredux_items": "Dragon Ball Redux"
+
+
 }
