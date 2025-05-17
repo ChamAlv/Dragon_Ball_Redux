@@ -1,7 +1,9 @@
 package net.cham.dragonballredux.item;
 
 import net.cham.dragonballredux.DragonBallRedux;
+import net.cham.dragonballredux.block.ModBlocks;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,7 +18,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.SENZU_BEAN)));
 
     public static final RegistryObject<Item> SENZU_SPROUT = ITEMS.register("senzu_sprout",
-            () -> new Item(new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.SENZU_CROP.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> SENZU_ESSENCE = ITEMS.register("senzu_essence",
             () -> new Item(new Item.Properties()));

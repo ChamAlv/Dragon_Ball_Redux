@@ -6,6 +6,7 @@ import net.cham.dragonballredux.item.ModCreativeModeTabs;
 import net.cham.dragonballredux.item.ModItems;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -46,7 +47,11 @@ public class DragonBallRedux {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event){
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(ModItems.SENZU_BEAN.get(), 1F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.SENZU_SPROUT.get(), 0.5F);
 
+        });
     }
 
     // Add the example block item to the building blocks tab

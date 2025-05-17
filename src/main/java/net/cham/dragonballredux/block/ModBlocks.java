@@ -1,10 +1,12 @@
 package net.cham.dragonballredux.block;
 
 import net.cham.dragonballredux.DragonBallRedux;
+import net.cham.dragonballredux.block.custom.SenzuCropBlock;
 import net.cham.dragonballredux.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,8 +32,8 @@ public class ModBlocks {
                     .sound(SoundType.AMETHYST)));
 
 
-
-
+    public static final RegistryObject<Block> SENZU_CROP = BLOCKS.register("senzu_crop",
+            () -> new SenzuCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
 
 
