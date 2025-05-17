@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragonballredux:senzu_bean"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "dragonballredux:senzu_sprout"
+  }
+}

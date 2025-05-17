@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_senzu_bean": {
+      "conditions": {
+        "items": [
+          {
+            "items": "dragonballredux:senzu_bean"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dragonballredux:senzu_essence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_senzu_bean"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dragonballredux:senzu_essence"
+    ]
+  }
+}

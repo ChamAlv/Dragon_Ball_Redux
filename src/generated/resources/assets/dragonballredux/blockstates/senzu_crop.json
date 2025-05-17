@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "dragonballredux:block/senzu_stage0"
+    },
+    "age=1": {
+      "model": "dragonballredux:block/senzu_stage1"
+    },
+    "age=2": {
+      "model": "dragonballredux:block/senzu_stage2"
+    },
+    "age=3": {
+      "model": "dragonballredux:block/senzu_stage3"
+    },
+    "age=4": {
+      "model": "dragonballredux:block/senzu_stage4"
+    },
+    "age=5": {
+      "model": "dragonballredux:block/senzu_stage5"
+    },
+    "age=6": {
+      "model": "dragonballredux:block/senzu_stage6"
+    },
+    "age=7": {
+      "model": "dragonballredux:block/senzu_stage7"
+    }
+  }
+}
