@@ -4,7 +4,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
-public class ModFoods {
+public class ModFoodProperties {
     public static final FoodProperties SENZU_BEAN = new FoodProperties.Builder()
             .nutrition(20)
             .saturationModifier(2F)

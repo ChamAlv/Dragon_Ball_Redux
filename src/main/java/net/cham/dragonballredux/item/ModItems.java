@@ -15,7 +15,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, DragonBallRedux.MOD_ID);
 
     public static final RegistryObject<Item> SENZU_BEAN = ITEMS.register("senzu_bean",
-            () -> new Item(new Item.Properties().food(ModFoods.SENZU_BEAN)));
+            () -> new Item(new Item.Properties().food(ModFoodProperties.SENZU_BEAN)));
 
     public static final RegistryObject<Item> SENZU_SPROUT = ITEMS.register("senzu_sprout",
             () -> new ItemNameBlockItem(ModBlocks.SENZU_CROP.get(), new Item.Properties()));
